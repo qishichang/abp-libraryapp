@@ -228,6 +228,10 @@
     <Compile Include="Migrations\201810150846132_Upgraded_To_ABP_v3_9_0.Designer.cs">
       <DependentUpon>201810150846132_Upgraded_To_ABP_v3_9_0.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201810310729072_AddAuthorCategoryBook.cs" />
+    <Compile Include="Migrations\201810310729072_AddAuthorCategoryBook.Designer.cs">
+      <DependentUpon>201810310729072_AddAuthorCategoryBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\AbpZeroDbMigrator.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\SeedData\DefaultEditionsCreator.cs" />
@@ -255,6 +259,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201810150846132_Upgraded_To_ABP_v3_9_0.resx">
       <DependentUpon>201810150846132_Upgraded_To_ABP_v3_9_0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810310729072_AddAuthorCategoryBook.resx">
+      <DependentUpon>201810310729072_AddAuthorCategoryBook.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

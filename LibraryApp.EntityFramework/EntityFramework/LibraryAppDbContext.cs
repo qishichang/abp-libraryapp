@@ -3,6 +3,7 @@ using System.Data.Entity;
 using Abp.Zero.EntityFramework;
 using LibraryApp.Authorization.Roles;
 using LibraryApp.Authorization.Users;
+using LibraryApp.Models;
 using LibraryApp.MultiTenancy;
 
 namespace LibraryApp.EntityFramework
@@ -10,6 +11,10 @@ namespace LibraryApp.EntityFramework
     public class LibraryAppDbContext : AbpZeroDbContext<Tenant, Role, User>
     {
         //TODO: Define an IDbSet for your Entities...
+        public DbSet<Author> Authors { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Book> Books { get; set; }
+
 
         /* NOTE: 
          *   Setting "Default" to base class helps us when working migration commands on Package Manager Console.
