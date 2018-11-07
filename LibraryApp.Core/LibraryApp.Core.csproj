@@ -214,8 +214,14 @@
     <Compile Include="Editions\EditionManager.cs" />
     <Compile Include="Features\FeatureValueStore.cs" />
     <Compile Include="Models\Author.cs" />
+    <Compile Include="Models\AuthorManager.cs" />
     <Compile Include="Models\Book.cs" />
+    <Compile Include="Models\BookManager.cs" />
     <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\CategoryManager.cs" />
+    <Compile Include="Models\IAuthorManager.cs" />
+    <Compile Include="Models\IBookManager.cs" />
+    <Compile Include="Models\ICategoryManager.cs" />
     <Compile Include="MultiTenancy\Tenant.cs" />
     <Compile Include="MultiTenancy\TenantManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
