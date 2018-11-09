@@ -1,9 +1,11 @@
 ###############################################################################
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
-$ cat .gitattributes
+
 LibraryApp.Web/lib/* linguist-vendored
 LibraryApp.Web/Scripts/* linguist-vendored
+LibraryApp.Web/css/* linguist-vendored
+LibraryApp.Web/scss/* linguist-vendored
 
 ###############################################################################
 # Set default behavior for command prompt diff.
