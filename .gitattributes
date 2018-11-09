@@ -1,7 +1,7 @@
 ###############################################################################
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
-* text=auto
+$ cat .gitattributes
 LibraryApp.Web/lib/* linguist-vendored
 LibraryApp.Web/Scripts/* linguist-vendored
 
