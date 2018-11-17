@@ -5,6 +5,7 @@ using Abp.Application.Services;
 using Abp.Configuration.Startup;
 using Abp.Modules;
 using Abp.WebApi;
+using LibraryApp.Authors;
 using Swashbuckle.Application;
 
 namespace LibraryApp.Api
@@ -18,7 +19,12 @@ namespace LibraryApp.Api
 
             Configuration.Modules.AbpWebApi().DynamicApiControllerBuilder
                 .ForAll<IApplicationService>(typeof(LibraryAppApplicationModule).Assembly, "app")
+                .WithConventionalVerbs()
                 .Build();
+
+            Configuration.Modules.AbpWebApi().DynamicApiControllerBuilder
+                .For<IAuthorAppService>("app/author")
+                .ForMethod("Delete").DontCreateAction().Build();
 
             Configuration.Modules.AbpWebApi().HttpConfiguration.Filters.Add(new HostAuthenticationFilter("Bearer"));
 

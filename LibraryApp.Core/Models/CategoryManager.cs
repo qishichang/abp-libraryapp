@@ -46,7 +46,8 @@ namespace LibraryApp.Models
 
         public IEnumerable<Category> GetAllList()
         {
-            return _repositoryCategory.GetAllIncluding(x => x.Books);
+            //return _repositoryCategory.GetAllIncluding(x => x.Books);
+            return _repositoryCategory.GetAll();
         }
 
         public Category GetCategoryById(int id)

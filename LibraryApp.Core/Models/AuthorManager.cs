@@ -46,7 +46,8 @@ namespace LibraryApp.Models
 
         public IEnumerable<Author> GetAllList()
         {
-            return _repositoryAuthor.GetAllIncluding(x => x.Books);
+            // return _repositoryAuthor.GetAllIncluding(x => x.Books);
+            return _repositoryAuthor.GetAll();
         }
 
         public Author GetAuthorById(int id)

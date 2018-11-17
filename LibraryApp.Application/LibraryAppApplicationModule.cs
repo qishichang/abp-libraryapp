@@ -36,7 +36,7 @@ namespace LibraryApp
 
                 cfg.CreateMap<CreateRoleDto, Role>().ForMember(x => x.Permissions, opt => opt.Ignore());
                 cfg.CreateMap<RoleDto, Role>().ForMember(x => x.Permissions, opt => opt.Ignore());
-                
+
                 cfg.CreateMap<UserDto, User>();
                 cfg.CreateMap<UserDto, User>().ForMember(x => x.Roles, opt => opt.Ignore());
 
@@ -44,12 +44,14 @@ namespace LibraryApp
                 cfg.CreateMap<CreateUserDto, User>().ForMember(x => x.Roles, opt => opt.Ignore());
 
                 cfg.CreateMap<CreateAuthorInput, Author>();
+                cfg.CreateMap<CreateAuthorInput, Author>().ForMember(x => x.Books, opt => opt.Ignore());
                 cfg.CreateMap<UpdateAuthorInput, Author>();
-                cfg.CreateMap<Author, GetAuthorOutput>();
 
                 cfg.CreateMap<CreateBookInput, Book>();
+                cfg.CreateMap<UpdateBookInput, Book>();
 
                 cfg.CreateMap<CreateCategoryInput, Category>();
+                cfg.CreateMap<UpdateCategoryInput, Category>();
             });
         }
     }
