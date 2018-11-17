@@ -1,4 +1,6 @@
 ﻿using Abp.Application.Services;
+using Abp.Authorization;
+using LibraryApp.Authorization;
 using LibraryApp.Books.DTO;
 using LibraryApp.Models;
 using System;
@@ -9,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace LibraryApp.Books
 {
+    [AbpAuthorize(PermissionNames.Pages_Users)]
     public class BookAppService : LibraryAppAppServiceBase, IBookAppService
     {
         private readonly IBookManager _bookManager;

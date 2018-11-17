@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Abp.Authorization;
+using LibraryApp.Authorization;
 using LibraryApp.Categories.DTO;
 using LibraryApp.Models;
 
 namespace LibraryApp.Categories
 {
+    [AbpAuthorize(PermissionNames.Pages_Users)]
     public class CategoryAppService : LibraryAppAppServiceBase, ICategoryAppService
     {
         private readonly ICategoryManager _categoryManager;
