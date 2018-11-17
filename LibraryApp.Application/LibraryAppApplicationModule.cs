@@ -7,6 +7,10 @@ using Abp.Domain.Repositories;
 using Abp.Modules;
 using LibraryApp.Authorization.Roles;
 using LibraryApp.Authorization.Users;
+using LibraryApp.Authors.DTO;
+using LibraryApp.Books.DTO;
+using LibraryApp.Categories.DTO;
+using LibraryApp.Models;
 using LibraryApp.Roles.Dto;
 using LibraryApp.Users.Dto;
 
@@ -38,6 +42,14 @@ namespace LibraryApp
 
                 cfg.CreateMap<CreateUserDto, User>();
                 cfg.CreateMap<CreateUserDto, User>().ForMember(x => x.Roles, opt => opt.Ignore());
+
+                cfg.CreateMap<CreateAuthorInput, Author>();
+                cfg.CreateMap<UpdateAuthorInput, Author>();
+                cfg.CreateMap<Author, GetAuthorOutput>();
+
+                cfg.CreateMap<CreateBookInput, Book>();
+
+                cfg.CreateMap<CreateCategoryInput, Category>();
             });
         }
     }
