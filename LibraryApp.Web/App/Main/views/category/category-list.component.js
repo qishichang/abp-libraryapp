@@ -5,10 +5,24 @@
     app.component("categoryList", {
         templateUrl: "/App/Main/views/category/category.cshtml",
         controllerAs: "vm",
-        controller: [controller],
+        controller: ["abp.services.app.category", controller],
     });
 
-    function controller() {
+    function controller(categoryService) {
         var vm = this;
+        vm.categories = [];
+
+        function getCategories() {
+            categoryService.listAll()
+                .then(function (result) {
+                    vm.categories = result.data;
+                });
+        }
+
+        vm.refresh = function () {
+            getCategories();
+        }
+
+        getCategories();
     }
 })();

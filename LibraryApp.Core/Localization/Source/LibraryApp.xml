@@ -81,5 +81,12 @@
     <text name="Books">Books</text>
     <text name="Category">Category</text>
 
+    <text name="ID">ID</text>
+    <text name="BirthDate">Birth Date</text>
+    <text name="DeathDate">Death Date</text>
+    <text name="TotalPageNumber">Total Page Number</text>
+    <text name="AuthorName">Author Name</text>
+    <text name="CategoryName">Category Name</text>
+
   </texts>
 </localizationDictionary>

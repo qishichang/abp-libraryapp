@@ -5,10 +5,24 @@
     app.component("authorList", {
         templateUrl: "/App/Main/views/authors/author.cshtml",
         controllerAs: "vm",
-        controller: [controller],
+        controller: ['abp.services.app.author', controller],
     });
 
-    function controller() {
+    function controller(authorService) {
         var vm = this;
+        vm.users = [];
+
+        function getAuthors() {
+            authorService.listAll()
+                .then(function (result) {
+                    vm.users = result.data;
+                });
+        }
+
+        vm.refresh = function () {
+            getAuthors();
+        };
+        
+        getAuthors();
     }
 })();
