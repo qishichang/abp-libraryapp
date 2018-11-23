@@ -17,120 +17,68 @@ namespace LibraryApp.Web
             context.Manager.MainMenu
                 .AddItem(
                     new MenuItemDefinition(
-                        PageNames.Home,
-                        L("HomePage"),
-                        url: "",
-                        icon: "home",
+                        "Home",
+                        new LocalizableString("HomePage", LibraryAppConsts.LocalizationSourceName),
+                        url: "#/",
+                        icon: "fa fa-home",
                         requiresAuthentication: true
-                    )
+                        )
                 ).AddItem(
                     new MenuItemDefinition(
-                        PageNames.Tenants,
+                        "Tenants",
                         L("Tenants"),
-                        url: "Tenants",
-                        icon: "business",
+                        url: "#tenants",
+                        icon: "fa fa-globe",
                         requiredPermissionName: PermissionNames.Pages_Tenants
-                    )
+                        )
                 ).AddItem(
                     new MenuItemDefinition(
-                        PageNames.Users,
+                        "Users",
                         L("Users"),
-                        url: "Users",
-                        icon: "people",
+                        url: "#users",
+                        icon: "fa fa-users",
                         requiredPermissionName: PermissionNames.Pages_Users
-                    )
+                        )
                 ).AddItem(
                     new MenuItemDefinition(
-                        PageNames.Roles,
+                        "Roles",
                         L("Roles"),
-                        url: "Roles",
-                        icon: "local_offer",
+                        url: "#users",
+                        icon: "fa fa-tag",
                         requiredPermissionName: PermissionNames.Pages_Roles
                     )
                 )
                 .AddItem(
                     new MenuItemDefinition(
-                        PageNames.About,
-                        L("About"),
-                        url: "About",
-                        icon: "info"
-                    )
-                ).AddItem( //Menu items below is just for demonstration!
+                        "About",
+                        new LocalizableString("About", LibraryAppConsts.LocalizationSourceName),
+                        url: "#/about",
+                        icon: "fa fa-info"
+                        )
+                )
+                .AddItem(
                     new MenuItemDefinition(
-                        "MultiLevelMenu",
-                        L("MultiLevelMenu"),
-                        icon: "menu"
-                    ).AddItem(
-                        new MenuItemDefinition(
-                            "AspNetBoilerplate",
-                            new FixedLocalizableString("ASP.NET Boilerplate")
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetBoilerplateHome",
-                                new FixedLocalizableString("Home"),
-                                url: "https://aspnetboilerplate.com?ref=abptmpl"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetBoilerplateTemplates",
-                                new FixedLocalizableString("Templates"),
-                                url: "https://aspnetboilerplate.com/Templates?ref=abptmpl"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetBoilerplateSamples",
-                                new FixedLocalizableString("Samples"),
-                                url: "https://aspnetboilerplate.com/Samples?ref=abptmpl"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetBoilerplateDocuments",
-                                new FixedLocalizableString("Documents"),
-                                url: "https://aspnetboilerplate.com/Pages/Documents?ref=abptmpl"
-                            )
+                        "Authors",
+                        new LocalizableString("Authors", LibraryAppConsts.LocalizationSourceName),
+                        url: "#/authors",
+                        icon: "fa fa-info"
                         )
-                    ).AddItem(
-                        new MenuItemDefinition(
-                            "AspNetZero",
-                            new FixedLocalizableString("ASP.NET Zero")
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetZeroHome",
-                                new FixedLocalizableString("Home"),
-                                url: "https://aspnetzero.com?ref=abptmpl"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetZeroDescription",
-                                new FixedLocalizableString("Description"),
-                                url: "https://aspnetzero.com/?ref=abptmpl#description"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetZeroFeatures",
-                                new FixedLocalizableString("Features"),
-                                url: "https://aspnetzero.com/?ref=abptmpl#features"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetZeroPricing",
-                                new FixedLocalizableString("Pricing"),
-                                url: "https://aspnetzero.com/?ref=abptmpl#pricing"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetZeroFaq",
-                                new FixedLocalizableString("Faq"),
-                                url: "https://aspnetzero.com/Faq?ref=abptmpl"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetZeroDocuments",
-                                new FixedLocalizableString("Documents"),
-                                url: "https://aspnetzero.com/Documents?ref=abptmpl"
-                            )
+                )
+                .AddItem(
+                    new MenuItemDefinition(
+                        "Books",
+                        new LocalizableString("Books", LibraryAppConsts.LocalizationSourceName),
+                        url: "#/books",
+                        icon: "fa fa-book"
                         )
-                    )
+                )
+                .AddItem(
+                    new MenuItemDefinition(
+                        "Category",
+                        new LocalizableString("Category", LibraryAppConsts.LocalizationSourceName),
+                        url: "#/category",
+                        icon: "fa fa-info"
+                        )
                 );
         }
 

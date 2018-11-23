@@ -4931,3 +4931,821 @@ Abp.Authorization.AbpAuthorizationException: Current user did not login to the a
    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
    at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
    at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+DEBUG 2018-11-23 21:57:02,274 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-11-23 21:57:02,297 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-11-23 21:57:02,326 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.Web.LibraryAppWebModule, LibraryApp.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:57:02,329 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppDataModule, LibraryApp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:57:02,329 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:57:02,330 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:57:02,330 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:57:02,330 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:57:02,330 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:57:02,330 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:57:02,331 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppCoreModule, LibraryApp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:57:02,331 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppApplicationModule, LibraryApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:57:02,331 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:57:02,331 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.Api.LibraryAppWebApiModule, LibraryApp.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:57:02,331 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:57:02,332 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:57:02,332 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:57:02,332 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:57:02,332 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:57:02,339 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-11-23 21:57:02,834 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 21:57:02,834 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 21:57:02,834 [1    ] o.Configuration.LanguageManagementConfig - Converted LibraryApp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 21:57:02,834 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 21:57:03,478 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: LibraryApp.EntityFramework.LibraryAppDbContext, LibraryApp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:57:06,953 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-11-23 21:57:07,165 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-11-23 21:57:07,242 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-11-23 21:57:07,279 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: LibraryApp
+DEBUG 2018-11-23 21:57:07,324 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-11-23 21:57:07,394 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-11-23 21:57:07,481 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2018-11-23 21:57:07,481 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-11-23 21:57:07,492 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-11-23 21:57:07,492 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.CreateUserDto
+DEBUG 2018-11-23 21:57:07,493 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.UpdateUserDto
+DEBUG 2018-11-23 21:57:07,493 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.UserDto
+DEBUG 2018-11-23 21:57:07,494 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.CreateRoleDto
+DEBUG 2018-11-23 21:57:07,494 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.PermissionDto
+DEBUG 2018-11-23 21:57:07,494 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.RoleDto
+DEBUG 2018-11-23 21:57:07,495 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-11-23 21:57:07,495 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.EditTenantDto
+DEBUG 2018-11-23 21:57:07,495 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.TenantDto
+DEBUG 2018-11-23 21:57:07,496 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Web.Models.Account.TenantChangeViewModel
+DEBUG 2018-11-23 21:57:07,496 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2018-11-23 21:57:09,964 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-11-23 21:57:09,965 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-11-23 21:57:09,966 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-11-23 21:57:09,967 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2018-11-23 21:57:09,968 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2018-11-23 21:57:09,970 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2018-11-23 21:57:09,971 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Categories.ICategoryAppService' with service name 'app/category'.
+DEBUG 2018-11-23 21:57:09,972 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Books.IBookAppService' with service name 'app/book'.
+DEBUG 2018-11-23 21:57:09,973 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Authors.IAuthorAppService' with service name 'app/author'.
+WARN  2018-11-23 21:57:16,227 [12   ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+WARN  2018-11-23 21:57:26,597 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Author' in localization source 'LibraryApp'!
+WARN  2018-11-23 21:57:26,599 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Book' in localization source 'LibraryApp'!
+WARN  2018-11-23 21:57:26,599 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Category' in localization source 'LibraryApp'!
+DEBUG 2018-11-23 21:58:35,114 [11   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-11-23 21:58:35,115 [11   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-11-23 21:58:35,116 [11   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-11-23 21:58:35,116 [11   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-11-23 21:58:59,200 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-11-23 21:58:59,213 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-11-23 21:58:59,219 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.Web.LibraryAppWebModule, LibraryApp.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:58:59,222 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppDataModule, LibraryApp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:58:59,222 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:58:59,222 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:58:59,222 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:58:59,223 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:58:59,223 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:58:59,223 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:58:59,223 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppCoreModule, LibraryApp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:58:59,223 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppApplicationModule, LibraryApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:58:59,223 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:58:59,224 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.Api.LibraryAppWebApiModule, LibraryApp.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:58:59,224 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:58:59,224 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:58:59,224 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:58:59,224 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:58:59,224 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:58:59,227 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-11-23 21:58:59,426 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 21:58:59,426 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 21:58:59,426 [1    ] o.Configuration.LanguageManagementConfig - Converted LibraryApp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 21:58:59,426 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 21:58:59,810 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: LibraryApp.EntityFramework.LibraryAppDbContext, LibraryApp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 21:59:01,539 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-11-23 21:59:01,587 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-11-23 21:59:01,652 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-11-23 21:59:01,686 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: LibraryApp
+DEBUG 2018-11-23 21:59:01,729 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-11-23 21:59:01,894 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-11-23 21:59:02,001 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2018-11-23 21:59:02,001 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-11-23 21:59:02,019 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-11-23 21:59:02,019 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.CreateUserDto
+DEBUG 2018-11-23 21:59:02,020 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.UpdateUserDto
+DEBUG 2018-11-23 21:59:02,020 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.UserDto
+DEBUG 2018-11-23 21:59:02,020 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.CreateRoleDto
+DEBUG 2018-11-23 21:59:02,020 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.PermissionDto
+DEBUG 2018-11-23 21:59:02,020 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.RoleDto
+DEBUG 2018-11-23 21:59:02,021 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-11-23 21:59:02,021 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.EditTenantDto
+DEBUG 2018-11-23 21:59:02,021 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.TenantDto
+DEBUG 2018-11-23 21:59:02,021 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Web.Models.Account.TenantChangeViewModel
+DEBUG 2018-11-23 21:59:02,023 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2018-11-23 21:59:03,759 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-11-23 21:59:03,760 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-11-23 21:59:03,761 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-11-23 21:59:03,763 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2018-11-23 21:59:03,764 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2018-11-23 21:59:03,766 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2018-11-23 21:59:03,767 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Categories.ICategoryAppService' with service name 'app/category'.
+DEBUG 2018-11-23 21:59:03,768 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Books.IBookAppService' with service name 'app/book'.
+DEBUG 2018-11-23 21:59:03,769 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Authors.IAuthorAppService' with service name 'app/author'.
+WARN  2018-11-23 21:59:18,577 [17   ] naries.DictionaryBasedLocalizationSource - Can not find 'Author' in localization source 'LibraryApp'!
+WARN  2018-11-23 21:59:18,578 [17   ] naries.DictionaryBasedLocalizationSource - Can not find 'Book' in localization source 'LibraryApp'!
+WARN  2018-11-23 21:59:20,430 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'Author' in localization source 'LibraryApp'!
+WARN  2018-11-23 21:59:20,431 [15   ] naries.DictionaryBasedLocalizationSource - Can not find 'Book' in localization source 'LibraryApp'!
+WARN  2018-11-23 21:59:33,430 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'Author' in localization source 'LibraryApp'!
+WARN  2018-11-23 21:59:33,431 [20   ] naries.DictionaryBasedLocalizationSource - Can not find 'Book' in localization source 'LibraryApp'!
+WARN  2018-11-23 21:59:33,645 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Author' in localization source 'LibraryApp'!
+WARN  2018-11-23 21:59:33,646 [22   ] naries.DictionaryBasedLocalizationSource - Can not find 'Book' in localization source 'LibraryApp'!
+DEBUG 2018-11-23 22:26:41,096 [30   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-11-23 22:26:41,098 [30   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-11-23 22:26:41,100 [30   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-11-23 22:26:41,101 [30   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-11-23 22:36:06,739 [58   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-11-23 22:36:06,754 [58   ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-11-23 22:36:06,761 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.Web.LibraryAppWebModule, LibraryApp.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:36:06,763 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppDataModule, LibraryApp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:36:06,763 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:36:06,763 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:36:06,763 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:36:06,763 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:36:06,764 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:36:06,764 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:36:06,764 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppCoreModule, LibraryApp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:36:06,764 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppApplicationModule, LibraryApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:36:06,764 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:36:06,764 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.Api.LibraryAppWebApiModule, LibraryApp.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:36:06,765 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:36:06,765 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:36:06,765 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:36:06,765 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:36:06,765 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:36:06,768 [58   ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-11-23 22:36:06,984 [58   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:36:06,984 [58   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:36:06,985 [58   ] o.Configuration.LanguageManagementConfig - Converted LibraryApp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:36:06,985 [58   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:36:07,429 [58   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: LibraryApp.EntityFramework.LibraryAppDbContext, LibraryApp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:36:09,201 [58   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-11-23 22:36:09,247 [58   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-11-23 22:36:09,311 [58   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-11-23 22:36:09,356 [58   ] Abp.Localization.LocalizationManager     - Initialized localization source: LibraryApp
+DEBUG 2018-11-23 22:36:09,394 [58   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-11-23 22:36:09,459 [58   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-11-23 22:36:09,511 [58   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2018-11-23 22:36:09,511 [58   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-11-23 22:36:09,518 [58   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-11-23 22:36:09,519 [58   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.CreateUserDto
+DEBUG 2018-11-23 22:36:09,519 [58   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.UpdateUserDto
+DEBUG 2018-11-23 22:36:09,519 [58   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.UserDto
+DEBUG 2018-11-23 22:36:09,520 [58   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.CreateRoleDto
+DEBUG 2018-11-23 22:36:09,520 [58   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.PermissionDto
+DEBUG 2018-11-23 22:36:09,520 [58   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.RoleDto
+DEBUG 2018-11-23 22:36:09,520 [58   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-11-23 22:36:09,520 [58   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.EditTenantDto
+DEBUG 2018-11-23 22:36:09,520 [58   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.TenantDto
+DEBUG 2018-11-23 22:36:09,521 [58   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Web.Models.Account.TenantChangeViewModel
+DEBUG 2018-11-23 22:36:09,521 [58   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2018-11-23 22:36:11,066 [58   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-11-23 22:36:11,067 [58   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-11-23 22:36:11,069 [58   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-11-23 22:36:11,070 [58   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2018-11-23 22:36:11,071 [58   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2018-11-23 22:36:11,072 [58   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2018-11-23 22:36:11,073 [58   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Categories.ICategoryAppService' with service name 'app/category'.
+DEBUG 2018-11-23 22:36:11,074 [58   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Books.IBookAppService' with service name 'app/book'.
+DEBUG 2018-11-23 22:36:11,075 [58   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Authors.IAuthorAppService' with service name 'app/author'.
+WARN  2018-11-23 22:36:14,595 [29   ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+WARN  2018-11-23 22:36:21,355 [33   ] naries.DictionaryBasedLocalizationSource - Can not find 'Author' in localization source 'LibraryApp'!
+WARN  2018-11-23 22:36:21,358 [33   ] naries.DictionaryBasedLocalizationSource - Can not find 'Book' in localization source 'LibraryApp'!
+ERROR 2018-11-23 22:36:31,078 [6    ] ibraryApp.Web.Controllers.HomeController - The view 'Index' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Home/Index.aspx
+~/Views/Home/Index.ascx
+~/Views/Shared/Index.aspx
+~/Views/Shared/Index.ascx
+~/Views/Home/Index.cshtml
+~/Views/Home/Index.vbhtml
+~/Views/Shared/Index.cshtml
+~/Views/Shared/Index.vbhtml
+System.InvalidOperationException: The view 'Index' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Home/Index.aspx
+~/Views/Home/Index.ascx
+~/Views/Shared/Index.aspx
+~/Views/Shared/Index.ascx
+~/Views/Home/Index.cshtml
+~/Views/Home/Index.vbhtml
+~/Views/Shared/Index.cshtml
+~/Views/Shared/Index.vbhtml
+   at System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+DEBUG 2018-11-23 22:38:16,973 [24   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-11-23 22:38:16,973 [24   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-11-23 22:38:16,974 [24   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-11-23 22:38:16,974 [24   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-11-23 22:38:29,692 [31   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-11-23 22:38:29,705 [31   ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-11-23 22:38:29,713 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.Web.LibraryAppWebModule, LibraryApp.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:38:29,715 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppDataModule, LibraryApp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:38:29,715 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:38:29,716 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:38:29,716 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:38:29,716 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:38:29,716 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:38:29,716 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:38:29,716 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppCoreModule, LibraryApp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:38:29,717 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppApplicationModule, LibraryApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:38:29,717 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:38:29,717 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.Api.LibraryAppWebApiModule, LibraryApp.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:38:29,717 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:38:29,717 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:38:29,717 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:38:29,717 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:38:29,718 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:38:29,721 [31   ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-11-23 22:38:29,948 [31   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:38:29,948 [31   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:38:29,948 [31   ] o.Configuration.LanguageManagementConfig - Converted LibraryApp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:38:29,948 [31   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:38:30,348 [31   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: LibraryApp.EntityFramework.LibraryAppDbContext, LibraryApp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:38:32,052 [31   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-11-23 22:38:32,094 [31   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-11-23 22:38:32,151 [31   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-11-23 22:38:32,181 [31   ] Abp.Localization.LocalizationManager     - Initialized localization source: LibraryApp
+DEBUG 2018-11-23 22:38:32,220 [31   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-11-23 22:38:32,281 [31   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-11-23 22:38:32,333 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2018-11-23 22:38:32,333 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-11-23 22:38:32,340 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-11-23 22:38:32,340 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.CreateUserDto
+DEBUG 2018-11-23 22:38:32,340 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.UpdateUserDto
+DEBUG 2018-11-23 22:38:32,341 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.UserDto
+DEBUG 2018-11-23 22:38:32,341 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.CreateRoleDto
+DEBUG 2018-11-23 22:38:32,341 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.PermissionDto
+DEBUG 2018-11-23 22:38:32,341 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.RoleDto
+DEBUG 2018-11-23 22:38:32,342 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-11-23 22:38:32,342 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.EditTenantDto
+DEBUG 2018-11-23 22:38:32,342 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.TenantDto
+DEBUG 2018-11-23 22:38:32,342 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Web.Models.Account.TenantChangeViewModel
+DEBUG 2018-11-23 22:38:32,342 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2018-11-23 22:38:33,956 [31   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-11-23 22:38:33,958 [31   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-11-23 22:38:33,960 [31   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-11-23 22:38:33,961 [31   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2018-11-23 22:38:33,963 [31   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2018-11-23 22:38:33,965 [31   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2018-11-23 22:38:33,967 [31   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Categories.ICategoryAppService' with service name 'app/category'.
+DEBUG 2018-11-23 22:38:33,968 [31   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Books.IBookAppService' with service name 'app/book'.
+DEBUG 2018-11-23 22:38:33,970 [31   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Authors.IAuthorAppService' with service name 'app/author'.
+WARN  2018-11-23 22:38:43,122 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Author' in localization source 'LibraryApp'!
+WARN  2018-11-23 22:38:43,123 [24   ] naries.DictionaryBasedLocalizationSource - Can not find 'Book' in localization source 'LibraryApp'!
+WARN  2018-11-23 22:38:54,592 [44   ] naries.DictionaryBasedLocalizationSource - Can not find 'Author' in localization source 'LibraryApp'!
+WARN  2018-11-23 22:38:54,593 [44   ] naries.DictionaryBasedLocalizationSource - Can not find 'Book' in localization source 'LibraryApp'!
+WARN  2018-11-23 22:39:29,246 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Author' in localization source 'LibraryApp'!
+WARN  2018-11-23 22:39:29,249 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Book' in localization source 'LibraryApp'!
+DEBUG 2018-11-23 22:42:24,403 [11   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-11-23 22:42:24,404 [11   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-11-23 22:42:24,405 [11   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-11-23 22:42:24,405 [11   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-11-23 22:42:40,404 [28   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-11-23 22:42:40,417 [28   ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-11-23 22:42:40,425 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.Web.LibraryAppWebModule, LibraryApp.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:42:40,427 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppDataModule, LibraryApp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:42:40,427 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:42:40,427 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:42:40,428 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:42:40,428 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:42:40,428 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:42:40,428 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:42:40,428 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppCoreModule, LibraryApp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:42:40,428 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppApplicationModule, LibraryApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:42:40,429 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:42:40,429 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.Api.LibraryAppWebApiModule, LibraryApp.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:42:40,429 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:42:40,429 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:42:40,429 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:42:40,429 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:42:40,429 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:42:40,433 [28   ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-11-23 22:42:40,672 [28   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:42:40,672 [28   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:42:40,672 [28   ] o.Configuration.LanguageManagementConfig - Converted LibraryApp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:42:40,672 [28   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:42:41,137 [28   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: LibraryApp.EntityFramework.LibraryAppDbContext, LibraryApp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+FATAL 2018-11-23 22:42:42,560 [28   ] Abp.AbpBootstrapper                      - System.ArgumentException: Directory does not exist.
+参数名: directoryVirtualPath
+   在 System.Web.Optimization.Bundle.IncludeDirectory(String directoryVirtualPath, String searchPattern, Boolean searchSubdirectories)
+   在 LibraryApp.Web.BundleConfig.RegisterBundles(BundleCollection bundles) 位置 D:\Code\ABP\LibraryApp\3.9.0\src\LibraryApp.Web\App_Start\BundleConfig.cs:行号 139
+   在 LibraryApp.Web.LibraryAppWebModule.Initialize() 位置 D:\Code\ABP\LibraryApp\3.9.0\src\LibraryApp.Web\App_Start\LibraryAppWebModule.cs:行号 56
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules()
+   在 Abp.AbpBootstrapper.Initialize()
+System.ArgumentException: Directory does not exist.
+参数名: directoryVirtualPath
+   在 System.Web.Optimization.Bundle.IncludeDirectory(String directoryVirtualPath, String searchPattern, Boolean searchSubdirectories)
+   在 LibraryApp.Web.BundleConfig.RegisterBundles(BundleCollection bundles) 位置 D:\Code\ABP\LibraryApp\3.9.0\src\LibraryApp.Web\App_Start\BundleConfig.cs:行号 139
+   在 LibraryApp.Web.LibraryAppWebModule.Initialize() 位置 D:\Code\ABP\LibraryApp\3.9.0\src\LibraryApp.Web\App_Start\LibraryAppWebModule.cs:行号 56
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules()
+   在 Abp.AbpBootstrapper.Initialize()
+DEBUG 2018-11-23 22:42:52,583 [19   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-11-23 22:42:52,585 [19   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-11-23 22:43:58,021 [28   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-11-23 22:43:58,037 [28   ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-11-23 22:43:58,050 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.Web.LibraryAppWebModule, LibraryApp.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:43:58,053 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppDataModule, LibraryApp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:43:58,053 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:43:58,053 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:43:58,053 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:43:58,054 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:43:58,054 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:43:58,054 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:43:58,055 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppCoreModule, LibraryApp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:43:58,055 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppApplicationModule, LibraryApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:43:58,055 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:43:58,055 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.Api.LibraryAppWebApiModule, LibraryApp.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:43:58,055 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:43:58,055 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:43:58,056 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:43:58,056 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:43:58,056 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:43:58,061 [28   ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-11-23 22:43:58,300 [28   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:43:58,300 [28   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:43:58,300 [28   ] o.Configuration.LanguageManagementConfig - Converted LibraryApp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:43:58,300 [28   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:43:58,694 [28   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: LibraryApp.EntityFramework.LibraryAppDbContext, LibraryApp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:44:00,401 [28   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-11-23 22:44:00,444 [28   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-11-23 22:44:00,527 [28   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-11-23 22:44:00,558 [28   ] Abp.Localization.LocalizationManager     - Initialized localization source: LibraryApp
+DEBUG 2018-11-23 22:44:00,595 [28   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-11-23 22:44:00,658 [28   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-11-23 22:44:00,709 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2018-11-23 22:44:00,709 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-11-23 22:44:00,717 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-11-23 22:44:00,717 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.CreateUserDto
+DEBUG 2018-11-23 22:44:00,718 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.UpdateUserDto
+DEBUG 2018-11-23 22:44:00,718 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.UserDto
+DEBUG 2018-11-23 22:44:00,718 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.CreateRoleDto
+DEBUG 2018-11-23 22:44:00,718 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.PermissionDto
+DEBUG 2018-11-23 22:44:00,718 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.RoleDto
+DEBUG 2018-11-23 22:44:00,719 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-11-23 22:44:00,719 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.EditTenantDto
+DEBUG 2018-11-23 22:44:00,719 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.TenantDto
+DEBUG 2018-11-23 22:44:00,719 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Web.Models.Account.TenantChangeViewModel
+DEBUG 2018-11-23 22:44:00,719 [28   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2018-11-23 22:44:02,236 [28   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-11-23 22:44:02,238 [28   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-11-23 22:44:02,239 [28   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-11-23 22:44:02,240 [28   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2018-11-23 22:44:02,241 [28   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2018-11-23 22:44:02,242 [28   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2018-11-23 22:44:02,244 [28   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Categories.ICategoryAppService' with service name 'app/category'.
+DEBUG 2018-11-23 22:44:02,245 [28   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Books.IBookAppService' with service name 'app/book'.
+DEBUG 2018-11-23 22:44:02,246 [28   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Authors.IAuthorAppService' with service name 'app/author'.
+WARN  2018-11-23 22:44:11,809 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Author' in localization source 'LibraryApp'!
+WARN  2018-11-23 22:44:11,810 [12   ] naries.DictionaryBasedLocalizationSource - Can not find 'Book' in localization source 'LibraryApp'!
+DEBUG 2018-11-23 22:47:13,648 [47   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-11-23 22:47:13,649 [47   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-11-23 22:47:13,650 [47   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-11-23 22:47:13,650 [47   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-11-23 22:47:26,621 [31   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-11-23 22:47:26,640 [31   ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-11-23 22:47:26,663 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.Web.LibraryAppWebModule, LibraryApp.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:47:26,665 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppDataModule, LibraryApp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:47:26,665 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:47:26,666 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:47:26,666 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:47:26,666 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:47:26,666 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:47:26,666 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:47:26,667 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppCoreModule, LibraryApp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:47:26,667 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppApplicationModule, LibraryApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:47:26,667 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:47:26,667 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.Api.LibraryAppWebApiModule, LibraryApp.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:47:26,667 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:47:26,668 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:47:26,668 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:47:26,668 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:47:26,668 [31   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:47:26,674 [31   ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-11-23 22:47:26,984 [31   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:47:26,985 [31   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:47:26,985 [31   ] o.Configuration.LanguageManagementConfig - Converted LibraryApp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:47:26,985 [31   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:47:27,741 [31   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: LibraryApp.EntityFramework.LibraryAppDbContext, LibraryApp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:47:29,802 [31   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-11-23 22:47:29,892 [31   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-11-23 22:47:30,042 [31   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-11-23 22:47:30,102 [31   ] Abp.Localization.LocalizationManager     - Initialized localization source: LibraryApp
+DEBUG 2018-11-23 22:47:30,151 [31   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-11-23 22:47:30,226 [31   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-11-23 22:47:30,291 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2018-11-23 22:47:30,291 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-11-23 22:47:30,298 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-11-23 22:47:30,298 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.CreateUserDto
+DEBUG 2018-11-23 22:47:30,298 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.UpdateUserDto
+DEBUG 2018-11-23 22:47:30,299 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.UserDto
+DEBUG 2018-11-23 22:47:30,299 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.CreateRoleDto
+DEBUG 2018-11-23 22:47:30,299 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.PermissionDto
+DEBUG 2018-11-23 22:47:30,299 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.RoleDto
+DEBUG 2018-11-23 22:47:30,299 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-11-23 22:47:30,300 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.EditTenantDto
+DEBUG 2018-11-23 22:47:30,300 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.TenantDto
+DEBUG 2018-11-23 22:47:30,300 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Web.Models.Account.TenantChangeViewModel
+DEBUG 2018-11-23 22:47:30,300 [31   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2018-11-23 22:47:31,984 [31   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-11-23 22:47:31,987 [31   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-11-23 22:47:31,989 [31   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-11-23 22:47:31,990 [31   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2018-11-23 22:47:31,991 [31   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2018-11-23 22:47:31,992 [31   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2018-11-23 22:47:31,994 [31   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Categories.ICategoryAppService' with service name 'app/category'.
+DEBUG 2018-11-23 22:47:31,996 [31   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Books.IBookAppService' with service name 'app/book'.
+DEBUG 2018-11-23 22:47:31,997 [31   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Authors.IAuthorAppService' with service name 'app/author'.
+WARN  2018-11-23 22:47:42,221 [47   ] naries.DictionaryBasedLocalizationSource - Can not find 'Author' in localization source 'LibraryApp'!
+WARN  2018-11-23 22:47:42,222 [47   ] naries.DictionaryBasedLocalizationSource - Can not find 'Book' in localization source 'LibraryApp'!
+WARN  2018-11-23 22:48:03,396 [56   ] naries.DictionaryBasedLocalizationSource - Can not find 'Refresh' in localization source 'LibraryApp'!
+WARN  2018-11-23 22:50:56,148 [36   ] naries.DictionaryBasedLocalizationSource - Can not find 'Author' in localization source 'LibraryApp'!
+WARN  2018-11-23 22:50:56,149 [36   ] naries.DictionaryBasedLocalizationSource - Can not find 'Book' in localization source 'LibraryApp'!
+DEBUG 2018-11-23 22:51:11,159 [32   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-11-23 22:51:11,161 [32   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-11-23 22:51:11,161 [32   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-11-23 22:51:11,162 [32   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-11-23 22:51:31,549 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-11-23 22:51:31,563 [1    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-11-23 22:51:31,571 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.Web.LibraryAppWebModule, LibraryApp.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:51:31,574 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppDataModule, LibraryApp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:51:31,574 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:51:31,575 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:51:31,575 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:51:31,575 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:51:31,576 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:51:31,576 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:51:31,576 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppCoreModule, LibraryApp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:51:31,576 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppApplicationModule, LibraryApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:51:31,577 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:51:31,577 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.Api.LibraryAppWebApiModule, LibraryApp.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:51:31,577 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:51:31,577 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:51:31,577 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:51:31,577 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:51:31,577 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:51:31,581 [1    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-11-23 22:51:31,935 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:51:31,935 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:51:31,935 [1    ] o.Configuration.LanguageManagementConfig - Converted LibraryApp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:51:31,935 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:51:32,365 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: LibraryApp.EntityFramework.LibraryAppDbContext, LibraryApp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:51:34,830 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-11-23 22:51:35,033 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-11-23 22:51:35,116 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-11-23 22:51:35,168 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: LibraryApp
+DEBUG 2018-11-23 22:51:35,228 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-11-23 22:51:35,360 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-11-23 22:51:35,490 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2018-11-23 22:51:35,490 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-11-23 22:51:35,501 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-11-23 22:51:35,502 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.CreateUserDto
+DEBUG 2018-11-23 22:51:35,502 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.UpdateUserDto
+DEBUG 2018-11-23 22:51:35,502 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.UserDto
+DEBUG 2018-11-23 22:51:35,502 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.CreateRoleDto
+DEBUG 2018-11-23 22:51:35,503 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.PermissionDto
+DEBUG 2018-11-23 22:51:35,503 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.RoleDto
+DEBUG 2018-11-23 22:51:35,504 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-11-23 22:51:35,504 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.EditTenantDto
+DEBUG 2018-11-23 22:51:35,504 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.TenantDto
+DEBUG 2018-11-23 22:51:35,505 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Web.Models.Account.TenantChangeViewModel
+DEBUG 2018-11-23 22:51:35,505 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2018-11-23 22:51:37,623 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-11-23 22:51:37,625 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-11-23 22:51:37,626 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-11-23 22:51:37,627 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2018-11-23 22:51:37,628 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2018-11-23 22:51:37,630 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2018-11-23 22:51:37,632 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Categories.ICategoryAppService' with service name 'app/category'.
+DEBUG 2018-11-23 22:51:37,633 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Books.IBookAppService' with service name 'app/book'.
+DEBUG 2018-11-23 22:51:37,634 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Authors.IAuthorAppService' with service name 'app/author'.
+WARN  2018-11-23 22:51:52,134 [8    ] naries.DictionaryBasedLocalizationSource - Can not find 'Author' in localization source 'LibraryApp'!
+WARN  2018-11-23 22:51:52,136 [8    ] naries.DictionaryBasedLocalizationSource - Can not find 'Book' in localization source 'LibraryApp'!
+WARN  2018-11-23 22:52:02,473 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Refresh' in localization source 'LibraryApp'!
+WARN  2018-11-23 22:52:05,756 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Author' in localization source 'LibraryApp'!
+WARN  2018-11-23 22:52:05,758 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Book' in localization source 'LibraryApp'!
+WARN  2018-11-23 22:52:06,079 [8    ] naries.DictionaryBasedLocalizationSource - Can not find 'Refresh' in localization source 'LibraryApp'!
+DEBUG 2018-11-23 22:55:20,236 [14   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-11-23 22:55:20,237 [14   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-11-23 22:55:20,237 [14   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-11-23 22:55:20,237 [14   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-11-23 22:55:30,377 [3    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-11-23 22:55:30,391 [3    ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-11-23 22:55:30,397 [3    ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.Web.LibraryAppWebModule, LibraryApp.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:55:30,400 [3    ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppDataModule, LibraryApp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:55:30,400 [3    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:55:30,400 [3    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:55:30,401 [3    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:55:30,401 [3    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:55:30,401 [3    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:55:30,401 [3    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:55:30,401 [3    ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppCoreModule, LibraryApp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:55:30,402 [3    ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppApplicationModule, LibraryApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:55:30,402 [3    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:55:30,402 [3    ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.Api.LibraryAppWebApiModule, LibraryApp.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:55:30,402 [3    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:55:30,402 [3    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:55:30,402 [3    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:55:30,403 [3    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:55:30,403 [3    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:55:30,406 [3    ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-11-23 22:55:30,635 [3    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:55:30,635 [3    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:55:30,635 [3    ] o.Configuration.LanguageManagementConfig - Converted LibraryApp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:55:30,635 [3    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 22:55:31,079 [3    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: LibraryApp.EntityFramework.LibraryAppDbContext, LibraryApp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 22:55:32,728 [3    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-11-23 22:55:32,770 [3    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-11-23 22:55:32,834 [3    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-11-23 22:55:32,866 [3    ] Abp.Localization.LocalizationManager     - Initialized localization source: LibraryApp
+DEBUG 2018-11-23 22:55:32,904 [3    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-11-23 22:55:32,969 [3    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-11-23 22:55:33,021 [3    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2018-11-23 22:55:33,021 [3    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-11-23 22:55:33,029 [3    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-11-23 22:55:33,030 [3    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.CreateUserDto
+DEBUG 2018-11-23 22:55:33,030 [3    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.UpdateUserDto
+DEBUG 2018-11-23 22:55:33,030 [3    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.UserDto
+DEBUG 2018-11-23 22:55:33,031 [3    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.CreateRoleDto
+DEBUG 2018-11-23 22:55:33,031 [3    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.PermissionDto
+DEBUG 2018-11-23 22:55:33,031 [3    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.RoleDto
+DEBUG 2018-11-23 22:55:33,031 [3    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-11-23 22:55:33,031 [3    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.EditTenantDto
+DEBUG 2018-11-23 22:55:33,031 [3    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.TenantDto
+DEBUG 2018-11-23 22:55:33,032 [3    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Web.Models.Account.TenantChangeViewModel
+DEBUG 2018-11-23 22:55:33,032 [3    ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2018-11-23 22:55:34,573 [3    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-11-23 22:55:34,575 [3    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-11-23 22:55:34,576 [3    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-11-23 22:55:34,579 [3    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2018-11-23 22:55:34,580 [3    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2018-11-23 22:55:34,581 [3    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2018-11-23 22:55:34,582 [3    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Categories.ICategoryAppService' with service name 'app/category'.
+DEBUG 2018-11-23 22:55:34,584 [3    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Books.IBookAppService' with service name 'app/book'.
+DEBUG 2018-11-23 22:55:34,585 [3    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Authors.IAuthorAppService' with service name 'app/author'.
+WARN  2018-11-23 22:55:48,194 [10   ] naries.DictionaryBasedLocalizationSource - Can not find 'Refresh' in localization source 'LibraryApp'!
+DEBUG 2018-11-23 23:05:41,303 [26   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-11-23 23:05:41,304 [26   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-11-23 23:05:41,305 [26   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-11-23 23:05:41,305 [26   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-11-23 23:05:54,368 [19   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-11-23 23:05:54,384 [19   ] Abp.Modules.AbpModuleManager             - Found 17 ABP modules in total.
+DEBUG 2018-11-23 23:05:54,393 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.Web.LibraryAppWebModule, LibraryApp.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 23:05:54,395 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppDataModule, LibraryApp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 23:05:54,395 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFramework.AbpZeroEntityFrameworkModule, Abp.Zero.EntityFramework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 23:05:54,395 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.Zero, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 23:05:54,396 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 23:05:54,396 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 23:05:54,396 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 23:05:54,396 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 23:05:54,396 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppCoreModule, LibraryApp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 23:05:54,397 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.LibraryAppApplicationModule, LibraryApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 23:05:54,397 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 23:05:54,397 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: LibraryApp.Api.LibraryAppWebApiModule, LibraryApp.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 23:05:54,397 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 23:05:54,397 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 23:05:54,397 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 23:05:54,397 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.SignalR.AbpWebSignalRModule, Abp.Web.SignalR, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 23:05:54,398 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.9.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 23:05:54,401 [19   ] Abp.Modules.AbpModuleManager             - 17 modules loaded.
+DEBUG 2018-11-23 23:05:54,689 [19   ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 23:05:54,689 [19   ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 23:05:54,690 [19   ] o.Configuration.LanguageManagementConfig - Converted LibraryApp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 23:05:54,690 [19   ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-11-23 23:05:55,299 [19   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: LibraryApp.EntityFramework.LibraryAppDbContext, LibraryApp.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-11-23 23:05:57,354 [19   ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-11-23 23:05:57,410 [19   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-11-23 23:05:57,482 [19   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-11-23 23:05:57,514 [19   ] Abp.Localization.LocalizationManager     - Initialized localization source: LibraryApp
+DEBUG 2018-11-23 23:05:57,555 [19   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-11-23 23:05:57,626 [19   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-11-23 23:05:57,700 [19   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 13 classes define auto mapping attributes
+DEBUG 2018-11-23 23:05:57,701 [19   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-11-23 23:05:57,710 [19   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-11-23 23:05:57,710 [19   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.CreateUserDto
+DEBUG 2018-11-23 23:05:57,711 [19   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.UpdateUserDto
+DEBUG 2018-11-23 23:05:57,711 [19   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Users.Dto.UserDto
+DEBUG 2018-11-23 23:05:57,711 [19   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.CreateRoleDto
+DEBUG 2018-11-23 23:05:57,711 [19   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.PermissionDto
+DEBUG 2018-11-23 23:05:57,711 [19   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Roles.Dto.RoleDto
+DEBUG 2018-11-23 23:05:57,712 [19   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-11-23 23:05:57,712 [19   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.EditTenantDto
+DEBUG 2018-11-23 23:05:57,712 [19   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.MultiTenancy.Dto.TenantDto
+DEBUG 2018-11-23 23:05:57,712 [19   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Web.Models.Account.TenantChangeViewModel
+DEBUG 2018-11-23 23:05:57,712 [19   ] Abp.AutoMapper.AbpAutoMapperModule       - LibraryApp.Web.Models.Account.TenantSelectionViewModel+TenantInfo
+DEBUG 2018-11-23 23:05:59,478 [19   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Sessions.ISessionAppService' with service name 'app/session'.
+DEBUG 2018-11-23 23:05:59,479 [19   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Users.IUserAppService' with service name 'app/user'.
+DEBUG 2018-11-23 23:05:59,481 [19   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Roles.IRoleAppService' with service name 'app/role'.
+DEBUG 2018-11-23 23:05:59,482 [19   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.MultiTenancy.ITenantAppService' with service name 'app/tenant'.
+DEBUG 2018-11-23 23:05:59,483 [19   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Configuration.IConfigurationAppService' with service name 'app/configuration'.
+DEBUG 2018-11-23 23:05:59,485 [19   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Authorization.Accounts.IAccountAppService' with service name 'app/account'.
+DEBUG 2018-11-23 23:05:59,486 [19   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Categories.ICategoryAppService' with service name 'app/category'.
+DEBUG 2018-11-23 23:05:59,487 [19   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Books.IBookAppService' with service name 'app/book'.
+DEBUG 2018-11-23 23:05:59,488 [19   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'LibraryApp.Authors.IAuthorAppService' with service name 'app/author'.
+WARN  2018-11-23 23:06:45,345 [5    ] Abp.Logging.LogHelper                    - Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+Abp.Authorization.AbpAuthorizationException: Current user did not login to the application!
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__19.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<CheckPermissions>d__22.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Abp.Authorization.AuthorizationHelper.<AuthorizeAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Abp.Authorization.AuthorizationHelperExtensions.Authorize(IAuthorizationHelper authorizationHelper, MethodInfo methodInfo, Type type)
+   at Abp.Web.Mvc.Authorization.AbpMvcAuthorizeFilter.OnAuthorization(AuthorizationContext filterContext)
+ERROR 2018-11-23 23:14:05,221 [14   ] Web.Mvc.Controllers.AbpAppViewController - The relative virtual path '~AppMainiewsauthorsauthor.cshtml' is not allowed here.
+System.ArgumentException: The relative virtual path '~AppMainiewsauthorsauthor.cshtml' is not allowed here.
+   at System.Web.VirtualPath.FailIfRelativePath()
+   at System.Web.Hosting.HostingEnvironment.MapPathActual(VirtualPath virtualPath, Boolean permitNull)
+   at System.Web.Hosting.HostingEnvironment.MapPathInternal(VirtualPath virtualPath)
+   at System.Web.Hosting.MapPathBasedVirtualPathProvider.CacheLookupOrInsert(String virtualPath, Boolean isFile)
+   at System.Web.Hosting.MapPathBasedVirtualPathProvider.FileExists(String virtualPath)
+   at Abp.Web.Mvc.Resources.Embedded.EmbeddedResourceVirtualPathProvider.FileExists(String virtualPath)
+   at System.Web.WebPages.FileExistenceCache.<.ctor>b__7_0(String path)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at System.Web.WebPages.FileExistenceCache.FileExists(String virtualPath)
+   at System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   at System.Web.Mvc.VirtualPathProviderViewEngine.GetPathFromSpecificName(ControllerContext controllerContext, String name, String cacheKey, String[]& searchedLocations)
+   at System.Web.Mvc.VirtualPathProviderViewEngine.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   at System.Web.Mvc.VirtualPathProviderViewEngine.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   at System.Web.Mvc.ViewEngineCollection.<>c__DisplayClass14_0.<FindView>b__1(IViewEngine e)
+   at System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   at System.Web.Mvc.ViewEngineCollection.FindView(ControllerContext controllerContext, String viewName, String masterName)
+   at System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)
+ERROR 2018-11-23 23:14:26,151 [18   ] Web.Mvc.Controllers.AbpAppViewController - The relative virtual path '~AppMainiewsauthorsauthor.cshtml' is not allowed here.
+System.ArgumentException: The relative virtual path '~AppMainiewsauthorsauthor.cshtml' is not allowed here.
+   at System.Web.VirtualPath.FailIfRelativePath()
+   at System.Web.Hosting.HostingEnvironment.MapPathActual(VirtualPath virtualPath, Boolean permitNull)
+   at System.Web.Hosting.HostingEnvironment.MapPathInternal(VirtualPath virtualPath)
+   at System.Web.Hosting.MapPathBasedVirtualPathProvider.CacheLookupOrInsert(String virtualPath, Boolean isFile)
+   at System.Web.Hosting.MapPathBasedVirtualPathProvider.FileExists(String virtualPath)
+   at Abp.Web.Mvc.Resources.Embedded.EmbeddedResourceVirtualPathProvider.FileExists(String virtualPath)
+   at System.Web.WebPages.FileExistenceCache.<.ctor>b__7_0(String path)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at System.Web.WebPages.FileExistenceCache.FileExists(String virtualPath)
+   at System.Web.Mvc.BuildManagerViewEngine.FileExists(ControllerContext controllerContext, String virtualPath)
+   at System.Web.Mvc.VirtualPathProviderViewEngine.GetPathFromSpecificName(ControllerContext controllerContext, String name, String cacheKey, String[]& searchedLocations)
+   at System.Web.Mvc.VirtualPathProviderViewEngine.GetPath(ControllerContext controllerContext, String[] locations, String[] areaLocations, String locationsPropertyName, String name, String controllerName, String cacheKeyPrefix, Boolean useCache, String[]& searchedLocations)
+   at System.Web.Mvc.VirtualPathProviderViewEngine.FindView(ControllerContext controllerContext, String viewName, String masterName, Boolean useCache)
+   at System.Web.Mvc.ViewEngineCollection.<>c__DisplayClass14_0.<FindView>b__1(IViewEngine e)
+   at System.Web.Mvc.ViewEngineCollection.Find(Func`2 lookup, Boolean trackSearchedPaths)
+   at System.Web.Mvc.ViewEngineCollection.FindView(ControllerContext controllerContext, String viewName, String masterName)
+   at System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_6.<BeginInvokeAction>b__3()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass3_1.<BeginInvokeAction>b__5(IAsyncResult asyncResult)

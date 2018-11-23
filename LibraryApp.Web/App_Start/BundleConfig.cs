@@ -8,6 +8,7 @@ namespace LibraryApp.Web
         {
             bundles.IgnoreList.Clear();
 
+            //ACCOUNT BUNDLES
             bundles.Add(
                 new StyleBundle("~/Bundles/account-vendor/css")
                     .Include("~/fonts/roboto/roboto.css", new CssRewriteUrlTransform())
@@ -50,28 +51,27 @@ namespace LibraryApp.Web
 
             //VENDOR RESOURCES
 
-            //~/Bundles/vendor/css
+            //~/Bundles/App/vendor/css
             bundles.Add(
-                new StyleBundle("~/Bundles/vendor/css")
-                .Include("~/fonts/roboto/roboto.css", new CssRewriteUrlTransform())
-                .Include("~/fonts/material-icons/materialicons.css", new CssRewriteUrlTransform())
-                .Include("~/lib/bootstrap/dist/css/bootstrap.css", new CssRewriteUrlTransform())
-                .Include("~/lib/bootstrap-select/dist/css/bootstrap-select.css", new CssRewriteUrlTransform())
-                .Include("~/lib/toastr/toastr.css", new CssRewriteUrlTransform())
-                .Include("~/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css", new CssRewriteUrlTransform())
-                .Include("~/lib/font-awesome/css/font-awesome.css", new CssRewriteUrlTransform())
-                .Include("~/lib/Waves/dist/waves.css", new CssRewriteUrlTransform())
-                .Include("~/lib/animate.css/animate.css", new CssRewriteUrlTransform())
-                .Include("~/css/materialize.css", new CssRewriteUrlTransform())
-                .Include("~/css/style.css", new CssRewriteUrlTransform())
-                .Include("~/css/themes/all-themes.css", new CssRewriteUrlTransform())
-                .Include("~/Views/Shared/_Layout.css", new CssRewriteUrlTransform())
-            );
+                new StyleBundle("~/Bundles/App/vendor/css")
+                    .Include("~/fonts/roboto/roboto.css", new CssRewriteUrlTransform())
+                    .Include("~/fonts/material-icons/materialicons.css", new CssRewriteUrlTransform())
+                    .Include("~/lib/bootstrap/dist/css/bootstrap.css", new CssRewriteUrlTransform())
+                    .Include("~/lib/toastr/toastr.css", new CssRewriteUrlTransform())
+                    .Include("~/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css", new CssRewriteUrlTransform())
+                    .Include("~/lib/font-awesome/css/font-awesome.css", new CssRewriteUrlTransform())
+                    .Include("~/lib/Waves/dist/waves.css", new CssRewriteUrlTransform())
+                    .Include("~/lib/animate.css/animate.css", new CssRewriteUrlTransform())
+                    .Include("~/css/materialize.css", new CssRewriteUrlTransform())
+                    .Include("~/css/style.css", new CssRewriteUrlTransform())
+                    .Include("~/css/themes/all-themes.css", new CssRewriteUrlTransform())
+                );
 
-            //~/Bundles/vendor/bottom (Included in the bottom for fast page load)
+            //~/Bundles/App/vendor/js
             bundles.Add(
-                new ScriptBundle("~/Bundles/vendor/js/bottom")
+                new ScriptBundle("~/Bundles/App/vendor/js")
                     .Include(
+
                         "~/lib/json2/json2.js",
                         "~/lib/jquery/dist/jquery.js",
                         "~/lib/bootstrap/dist/js/bootstrap.js",
@@ -87,16 +87,26 @@ namespace LibraryApp.Web
                         "~/lib/Waves/dist/waves.js",
                         "~/lib/push.js/push.js",
                         "~/lib/jquery.serializejson/jquery.serializejson.js",
+
+                        "~/Scripts/angular.min.js",
+                        "~/Scripts/angular-animate.min.js",
+                        "~/Scripts/angular-sanitize.min.js",
+                        "~/Scripts/angular-ui-router.min.js",
+                        "~/Scripts/angular-ui/ui-bootstrap.min.js",
+                        "~/Scripts/angular-ui/ui-bootstrap-tpls.min.js",
+                        "~/Scripts/angular-ui/ui-utils.min.js",
+
                         "~/Abp/Framework/scripts/abp.js",
                         "~/Abp/Framework/scripts/libs/abp.jquery.js",
                         "~/Abp/Framework/scripts/libs/abp.toastr.js",
                         "~/Abp/Framework/scripts/libs/abp.blockUI.js",
                         "~/Abp/Framework/scripts/libs/abp.spin.js",
                         "~/Abp/Framework/scripts/libs/abp.sweet-alert.js",
+                        "~/Abp/Framework/scripts/libs/angularjs/abp.ng.js",
+
                         "~/js/admin.js",
-                        "~/js/main.js",
-                        "~/Scripts/jquery.signalR-2.2.3.js",
-                        "~/Views/Shared/_Layout.js"
+                        "~/Scripts/jquery.signalR-2.2.3.min.js",
+                        "~/js/main.js"
                     )
                 );
 
@@ -113,17 +123,23 @@ namespace LibraryApp.Web
                         "~/lib/Flot/jquery.flot.pie.js",
                         "~/lib/Flot/jquery.flot.categories.js",
                         "~/lib/Flot/jquery.flot.time.js",
-                        "~/lib/jquery-sparkline/dist/jquery.sparkline.js",
-                        "~/Views/Home/Index.js"
+                        "~/lib/jquery-sparkline/dist/jquery.sparkline.js"
                     )
             );
 
             //APPLICATION RESOURCES
 
-            //~/Bundles/css
+            //~/Bundles/App/Main/css
             bundles.Add(
-                new StyleBundle("~/Bundles/css")
-                    .Include("~/css/main.css")
+                new StyleBundle("~/Bundles/App/Main/css")
+                    .IncludeDirectory("~/App/Main", "*.css", true)
+                );
+
+            //~/Bundles/App/Main/js
+            bundles.Add(
+                new ScriptBundle("~/Bundles/App/Main/js")
+                    .IncludeDirectory("~/Common/Scripts", "*.js", true)
+                    .IncludeDirectory("~/App/Main", "*.js", true)
                 );
         }
     }

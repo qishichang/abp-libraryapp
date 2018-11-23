@@ -77,6 +77,9 @@
     <text name="Edit">Edit</text>
     <text name="Delete">Delete</text>
 
+    <text name="Authors">Authors</text>
+    <text name="Books">Books</text>
+    <text name="Category">Category</text>
 
   </texts>
 </localizationDictionary>
