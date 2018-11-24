@@ -87,6 +87,8 @@
     <text name="TotalPageNumber">Total Page Number</text>
     <text name="AuthorName">Author Name</text>
     <text name="CategoryName">Category Name</text>
+    <text name="CreateNewAuthor">Create New Author</text>
+    <text name="EditAuthor">Edit Author</text>
 
   </texts>
 </localizationDictionary>

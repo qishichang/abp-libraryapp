@@ -22,9 +22,9 @@ namespace LibraryApp.Api
                 .WithConventionalVerbs()
                 .Build();
 
-            Configuration.Modules.AbpWebApi().DynamicApiControllerBuilder
-                .For<IAuthorAppService>("app/author")
-                .ForMethod("Delete").DontCreateAction().Build();
+            //Configuration.Modules.AbpWebApi().DynamicApiControllerBuilder
+            //    .For<IAuthorAppService>("app/author")
+            //    .ForMethod("Delete").DontCreateAction().Build();
 
             Configuration.Modules.AbpWebApi().HttpConfiguration.Filters.Add(new HostAuthenticationFilter("Bearer"));
 

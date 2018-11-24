@@ -41,9 +41,7 @@
                 });
 
                 modalInstance.rendered.then(function () {
-                    $timeout(function () {
-                        $.AdminBSB.input.activate();
-                    }, 0);
+                    $.AdminBSB.input.activate();
                 });
 
                 modalInstance.result.then(function () {

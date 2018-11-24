@@ -14,8 +14,9 @@
 
     //Configuration for Angular UI routing.
     app.config([
-        '$stateProvider', '$urlRouterProvider', '$locationProvider', '$qProvider',
-        function ($stateProvider, $urlRouterProvider, $locationProvider, $qProvider) {
+        '$stateProvider', '$urlRouterProvider', '$locationProvider', '$qProvider', '$httpProvider',
+        function ($stateProvider, $urlRouterProvider, $locationProvider, $qProvider, $httpProvider) {
+            $httpProvider.defaults.headers.delete = { 'Content-Type': 'application/json' };
             $locationProvider.hashPrefix('');
             $urlRouterProvider.otherwise('/');
             $qProvider.errorOnUnhandledRejections(false);

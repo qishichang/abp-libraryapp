@@ -454,6 +454,8 @@
     <Content Include="App\Main\services\appSession.js" />
     <Content Include="App\Main\views\about\about.js" />
     <Content Include="App\Main\views\authors\author-list.component.js" />
+    <Content Include="App\Main\views\authors\createModal.js" />
+    <Content Include="App\Main\views\authors\editModal.js" />
     <Content Include="App\Main\views\books\book-list.component.js" />
     <Content Include="App\Main\views\category\category-list.component.js" />
     <Content Include="App\Main\views\directives\autoFocus.js" />
@@ -2699,6 +2701,8 @@
     <Content Include="App\Main\views\authors\author.cshtml" />
     <Content Include="App\Main\views\books\book.cshtml" />
     <Content Include="App\Main\views\category\category.cshtml" />
+    <Content Include="App\Main\views\authors\createModal.cshtml" />
+    <Content Include="App\Main\views\authors\editModal.cshtml" />
     <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
