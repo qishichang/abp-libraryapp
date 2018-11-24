@@ -89,6 +89,8 @@
     <text name="CategoryName">Category Name</text>
     <text name="CreateNewAuthor">Create New Author</text>
     <text name="EditAuthor">Edit Author</text>
+    <text name="CreateNewCategory">Create New Category</text>
+    <text name="EditCategory">Edit Category</text>
 
   </texts>
 </localizationDictionary>

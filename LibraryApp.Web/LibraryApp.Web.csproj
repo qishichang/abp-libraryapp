@@ -458,6 +458,8 @@
     <Content Include="App\Main\views\authors\editModal.js" />
     <Content Include="App\Main\views\books\book-list.component.js" />
     <Content Include="App\Main\views\category\category-list.component.js" />
+    <Content Include="App\Main\views\category\createModal.js" />
+    <Content Include="App\Main\views\category\editModal.js" />
     <Content Include="App\Main\views\directives\autoFocus.js" />
     <Content Include="App\Main\views\directives\enterKey.js" />
     <Content Include="App\Main\views\home\home.js" />
@@ -2703,6 +2705,8 @@
     <Content Include="App\Main\views\category\category.cshtml" />
     <Content Include="App\Main\views\authors\createModal.cshtml" />
     <Content Include="App\Main\views\authors\editModal.cshtml" />
+    <Content Include="App\Main\views\category\createModal.cshtml" />
+    <Content Include="App\Main\views\category\editModal.cshtml" />
     <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
